@@ -1,0 +1,316 @@
+@import url('http://fonts.cdnfonts.com/css/ferro-rosso');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  margin-top: 1.3%;
+  margin-bottom: auto;
+  font-size: 50px;
+  font-family: 'Ferro Rosso', sans-serif;
+}
+
+.h1-2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 50px;
+}
+
+/* inputs */
+.form-control {
+  position: relative;
+  margin: 20px auto 10px;
+  width: 80%;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px black solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: black;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: black;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: black;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+  color: black;
+  transform: translateY(-30px);
+}
+
+/* div inputs */
+.div1{
+  display: flex;
+  column-gap: 30px;
+}
+
+.div2{
+  text-align: center;
+  width: 20%;
+  column-gap: 100px;
+  margin-left: 3%;
+}
+
+.div3{
+  text-align: center;
+  width: 46%;
+  column-gap: 100px;
+  margin-top: 20px;
+  margin-right: auto;
+}
+
+.divbal{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.aux {
+  border-radius: 20px;
+  background-color: #cf0e0e;
+}
+
+.aux2 {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.aux3{
+  width: 100%;
+  justify-content: center;
+}
+
+.divtabela{
+  display: flex;
+  justify-content: center;
+  background-color: #cf0e0e;
+  padding: 20px 8px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.tabela{
+  table-layout: fixed;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Menu */
+.menu {
+  background-color: #cf0e0e;
+  text-align: center;
+  align-content: center;
+  padding: 30px 8px;
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+}
+
+.fundo {
+  margin-top: auto;
+  align-content: center;
+  text-align: center;
+}
+
+/* checkbox */
+/* Hide the default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #ccc;
+  border-radius: 25px;
+  transition: 0.15s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: rgb(255, 234, 0);
+  border-radius: 25px;
+  transition: 0.15s;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid black;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+/* Botoes */
+/* From uiverse.io by @menezes11 */
+button {
+  position: relative;
+  padding: 1em 1.8em;
+  outline: none;
+  border: 1px solid #303030;
+  background: #212121;
+  color: #ffd727;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.but {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #ffd727, 0 0 25px #ffd727, 0 0 50px #ffd727;
+  transition-delay: 0.6s;
+}
+
+button span {
+  position: absolute;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, white);
+}
+
+button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, white);
+}
+
+button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, white);
+}
+
+button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, white);
+}
+
+button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+
+button:active {
+  background: #cf0e0e;
+  background: linear-gradient(to top right, #cf0e0e, #cf0e0e);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px black, 0 0 8px #cf0e0e, 0 0 8px #cf0e0e;
+  transition: 0.1s;
+}
+
+button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}

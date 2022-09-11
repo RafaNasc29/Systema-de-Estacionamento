@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            href="http://fonts.cdnfonts.com/css/ferro-rosso"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="CSS/CSS.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>|Park|n'go</title>
+    </head>
+
+    <body style="background-color: #fbe063">
+        <div class="fundo">
+            <header>
+                <h1 class="h1">|Park|n'go</h1>
+            </header>
+        </div>
+
+        <div class="div1">
+            <div class="div2">
+                <div class="aux">
+                    <div class="form-control">
+                        <input id="id" disabled />
+                        <label>
+                            <span>I</span>
+                            <span>d</span>
+                        </label>
+                    </div>
+
+                    <div class="form-control">
+                        <input
+                            type="text"
+                            required=""
+                            name="plate"
+                            id="plate"
+                        />
+                        <label>
+                            <span style="transition-delay: 0ms">P</span>
+                            <span style="transition-delay: 50ms">l</span>
+                            <span style="transition-delay: 100ms">a</span>
+                            <span style="transition-delay: 150ms">c</span>
+                            <span style="transition-delay: 200ms">a</span>
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <input
+                            type="text"
+                            required=""
+                            name="brand"
+                            id="brand"
+                        />
+                        <label>
+                            <span style="transition-delay: 0ms">M</span>
+                            <span style="transition-delay: 50ms">a</span>
+                            <span style="transition-delay: 100ms">r</span>
+                            <span style="transition-delay: 150ms">c</span>
+                            <span style="transition-delay: 200ms">a</span>
+                        </label>
+                    </div>
+
+                    <div class="form-control">
+                        <input
+                            type="text"
+                            required=""
+                            name="color"
+                            id="color"
+                        />
+                        <label>
+                            <span style="transition-delay: 0ms">c</span>
+                            <span style="transition-delay: 50ms">o</span>
+                            <span style="transition-delay: 100ms">r</span>
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" required="" name="name" id="name" />
+                        <label>
+                            <span style="transition-delay: 0ms">N</span>
+                            <span style="transition-delay: 50ms">o</span>
+                            <span style="transition-delay: 100ms">m</span>
+                            <span style="transition-delay: 150ms">e</span>
+                            <span style="transition-delay: 200ms"> </span>
+                            <span style="transition-delay: 250ms">d</span>
+                            <span style="transition-delay: 300ms">o</span>
+                            <span style="transition-delay: 350ms"> </span>
+                            <span style="transition-delay: 400ms">P</span>
+                            <span style="transition-delay: 450ms">r</span>
+                            <span style="transition-delay: 500ms">o</span>
+                            <span style="transition-delay: 550ms">p</span>
+                            <span style="transition-delay: 600ms">r</span>
+                            <span style="transition-delay: 650ms">i</span>
+                            <span style="transition-delay: 700ms">e</span>
+                            <span style="transition-delay: 750ms">t</span>
+                            <span style="transition-delay: 800ms">a</span>
+                            <span style="transition-delay: 850ms">r</span>
+                            <span style="transition-delay: 900ms">i</span>
+                            <span style="transition-delay: 950ms">o</span>
+                        </label>
+                    </div>
+
+                    <div class="form-control">
+                        <input
+                            type="text"
+                            required=""
+                            name="horaE"
+                            id="horaE"
+                        />
+                        <label>
+                            <span style="transition-delay: 0ms">H</span>
+                            <span style="transition-delay: 50ms">o</span>
+                            <span style="transition-delay: 100ms">r</span>
+                            <span style="transition-delay: 150ms">á</span>
+                            <span style="transition-delay: 200ms">r</span>
+                            <span style="transition-delay: 250ms">i</span>
+                            <span style="transition-delay: 300ms">o</span>
+                            <span style="transition-delay: 350ms"> </span>
+                            <span style="transition-delay: 400ms">d</span>
+                            <span style="transition-delay: 450ms">e</span>
+                            <span style="transition-delay: 500ms"> </span>
+                            <span style="transition-delay: 550ms">E</span>
+                            <span style="transition-delay: 600ms">n</span>
+                            <span style="transition-delay: 650ms">t</span>
+                            <span style="transition-delay: 700ms">r</span>
+                            <span style="transition-delay: 750ms">a</span>
+                            <span style="transition-delay: 800ms">d</span>
+                            <span style="transition-delay: 850ms">a</span>
+                        </label>
+                    </div>
+
+                    <div class="aux2">
+                        <label class="container">
+                            <h3>Carro</h3>
+                            <input
+                                type="checkbox"
+                                id="car"
+                                onclick="carORmoto()"
+                            />
+                            <div class="checkmark"></div>
+                        </label>
+                        <label class="container">
+                            <h3>Moto</h3>
+                            <input
+                                type="checkbox"
+                                id="moto"
+                                onclick="carORmoto()"
+                            />
+                            <div class="checkmark"></div>
+                        </label>
+                    </div>
+                    <br />
+                    <div class="aux3">
+                        <button class="but" onclick="register()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Estacionar Veículo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div2">
+                <div class="aux">
+                    <div class="form-control">
+                        <input type="text" required="" name="Id" id="idS" />
+                        <label>
+                            <span style="transition-delay: 0ms">I</span>
+                            <span style="transition-delay: 50ms">d</span>
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <input
+                            type="text"
+                            required=""
+                            name="horasaida"
+                            id="horaS"
+                        />
+                        <label>
+                            <span style="transition-delay: 0ms">H</span>
+                            <span style="transition-delay: 50ms">o</span>
+                            <span style="transition-delay: 100ms">r</span>
+                            <span style="transition-delay: 150ms">á</span>
+                            <span style="transition-delay: 200ms">r</span>
+                            <span style="transition-delay: 250ms">i</span>
+                            <span style="transition-delay: 300ms">o</span>
+                            <span style="transition-delay: 350ms"> </span>
+                            <span style="transition-delay: 400ms">d</span>
+                            <span style="transition-delay: 450ms">e</span>
+                            <span style="transition-delay: 500ms"> </span>
+                            <span style="transition-delay: 550ms">s</span>
+                            <span style="transition-delay: 600ms">a</span>
+                            <span style="transition-delay: 650ms">i</span>
+                            <span style="transition-delay: 700ms">d</span>
+                            <span style="transition-delay: 750ms">a</span>
+                        </label>
+                    </div>
+                    <div class="aux3">
+                        <button class="but" onclick="releaseVehicle()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Liberar
+                        </button>
+                    </div>
+                </div>
+                <br />
+                <div class="aux">
+                    <button class="but" onclick="report()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Gerar Relatório
+                    </button>
+                    <br />
+                    <button class="but" onclick="balance()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Saldo
+                    </button>
+                </div>
+                <br />
+                <h1 class="h1">Saldo</h1>
+                <div class="aux">
+                    <div id="bala"></div>
+                </div>
+            </div>
+
+            <div class="div3">
+                <h1 class="h1">Carros Estacionados</h1>
+                <div class="aux">
+                    <div class="divtabela">
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Nome</td>
+                                    <td>Placa</td>
+                                    <td>Marca</td>
+                                    <td>Cor</td>
+                                    <td>Hora de Entrada</td>
+                                    <td>Hora de Saída</td>
+                                </tr>
+                            </thead>
+                            <tbody id="reportE"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+                <h1 class="h1">Carros que Sairam</h1>
+                <div class="aux">
+                    <div class="divtabela">
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Nome</td>
+                                    <td>Placa</td>
+                                    <td>Marca</td>
+                                    <td>Cor</td>
+                                    <td>Hora de Entrada</td>
+                                    <td>Hora de Saída</td>
+                                </tr>
+                            </thead>
+                            <tbody id="reportS"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="javascript/estacionamento.js"></script>
+        <script src="javascript/jscript.js"></script>
+        <script src="javascript/veiculo.js"></script>
+    </body>
+</html>
