@@ -1,4 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/ferro-rosso');
+@font-face {
+  font-family: 'Ferrari';
+  src: url('FerroRosso.ttf') format('truetype');
+}
 
 body {
   margin: 0;
@@ -10,7 +13,7 @@ body {
   margin-top: 1.3%;
   margin-bottom: auto;
   font-size: 50px;
-  font-family: 'Ferro Rosso', sans-serif;
+  font-family: 'Ferrari', Times, serif;
 }
 
 .h1-2 {
